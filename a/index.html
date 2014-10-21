@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+<script src="../jquery.js"></script>
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+
+<style>
+.links {
+position: fixed;
+margin-top: 200px;
+}
+</style>
+
+<script>
+$("document").ready(function() {
+	$("h3").each(function() {
+		$(".links").append("<br/><a href='#"+$(this).attr("id")+"'>"+$(this).text()+"</a>");
+	});
+});
+</script>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10">
+			<div class="page-header"><h1>Everything NXT<small> An Introduction</h1></div>
+			<div class="page-header"><h3 id="what">What is Nxt?</h3></div>
+			<div class="page-header"><h3 id="payment">Nxt as a Payment System</h3></div>
+			<div class="page-header"><h3 id="platform">Nxt as a Platform</h3></div>
+			<div class="page-header"><h3 id="byzantine">Byzantine Generals Problem</h3></div>
+			<div class="page-header"><h3 id="blockchain">Blockchain Solution</h3></div>
+			<div class="page-header"><h3 id="pow">Bitcoin and PoW</h3></div>
+			<div class="page-header"><h3 id="pos">Advantages of PoS</h3></div>
+			<div class="page-header"><h3 id="transparent">Transparent Forging</h3></div>
+			<div class="page-header"><h3 id="misconceptions">Common Misconceptions</h3></div>
+			<div class="page-header"><h3 id="bcnext">How Nxt Began</h3></div>
+			<div class="page-header"><h3 id="features">The Features of Nxt</h3></div>
+			
+		</div>
+		<div class="col-md-2">
+		<div class="links">
+		<strong>Jump to...</strong>
+		</div>
+		</div>
+	</div>
+
+
+</div>
+
+</body>
+</html>
